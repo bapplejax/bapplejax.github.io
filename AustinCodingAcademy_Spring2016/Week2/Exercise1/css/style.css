@@ -1,0 +1,11 @@
+#s1header {
+    font-size: 50px;
+    color: rgba(0,0,0, .3);
+    background-color: #439579;
+}
+
+.myParagraph {
+    font-size: 50px;
+    color: brown;
+    border: 1px solid blue;
+}
