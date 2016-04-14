@@ -1,0 +1,12 @@
+
+.my_form_container {
+    background-image: url(https://www.scripted.com/wp-content/uploads/2014/02/Contact_Background.png);
+    background-size: cover;
+    height: 100vh;
+}
+
+.contact_form {
+    background-color: rgba(255,255,255,.4);
+    margin-top: 20px;
+    border-radius: 10px;
+}
