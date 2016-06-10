@@ -1,0 +1,249 @@
+/*
+* Style tweaks
+* --------------------------------------------------
+*/
+
+html,
+body {
+    overflow-x: hidden;
+    /* Prevent scroll on narrow devices */
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    background-color: black;
+}
+
+footer {
+    padding: 30px 0;
+}
+
+
+/*
+ * Custom styles for navbar
+ */
+
+.navbar-toggle,
+.navbar-toggle .icon-bar {
+    border: 1px solid white;
+}
+
+.navbar-brand {
+    font-size: 24px;
+}
+
+.navbar-container {
+    padding: 20px 0 20px 0;
+}
+
+.navbar.navbar-fixed-top.fixed-theme {
+    background-color: #222;
+    border-color: #080808;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .8);
+}
+
+.navbar-brand.fixed-theme {
+    font-size: 18px;
+}
+
+.navbar-container.fixed-theme {
+    padding: 0;
+}
+
+.navbar-brand.fixed-theme,
+.navbar-container.fixed-theme,
+.navbar.navbar-fixed-top.fixed-theme,
+.navbar-brand,
+.navbar-container {
+    transition: 0.8s;
+    -webkit-transition: 0.8s;
+}
+
+#header a {
+    color: white;
+}
+
+.navbar-right {
+    margin-right: 0;
+}
+
+#navbar a {
+    position: relative;
+    color: #ddd;
+    text-decoration: none;
+    padding: 15px 0 5px 0;
+    margin-left: 30px;
+    font-size: 24px;
+}
+
+#navbar a:hover {
+    color: #fff;
+    background-color: rgba(0, 0, 0, .0);
+}
+
+#navbar a:focus {
+    background: rgba(0, 0, 0, .0);
+}
+
+#navbar a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+#navbar a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.fixed-theme #navbar a {
+    font-size: 18px;
+    transition: 0.8s;
+    -webkit-transition: 0.8s;
+}
+
+
+/*
+ * Hero styles
+ */
+
+.fade-in {
+    -webkit-animation: fade-in 2s ease;
+    -moz-animation: fade-in ease-in-out 2s both;
+    -ms-animation: fade-in ease-in-out 2s both;
+    -o-animation: fade-in ease-in-out 2s both;
+    animation: fade-in 2s ease;
+    visibility: visible;
+    -webkit-backface-visibility: hidden;
+}
+
+@-webkit-keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fade-in {
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@-o-keyframes fade-in {
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+#banner-load {
+    height: 85vh;
+    overflow: hidden;
+    background-size: cover;
+    text-align: center;
+}
+
+#banner-load h2 {
+    color: white;
+    font-size: 20px;
+}
+
+.TNL_logo {
+    width: 300px;
+    margin-top: 31vh;
+}
+
+
+/*
+ * Three Circle styles
+ */
+
+.three_circles {
+    float: left;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 75vh;
+}
+
+.three_circles h3 {
+    color: white;
+}
+
+.three_circles img {
+    width: 144px;
+    border-radius: 50%;
+    height: 144px;
+    opacity: .7;
+    transition: 0.8s;
+    -webkit-transition: 0.8s;
+}
+
+.three_circles img:hover {
+    opacity: 1;
+}
+
+.three_circles > div {
+    display: inline-block;
+}
+
+.three_circles > div:nth-child(2) {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+
+/*
+ * Featured styles
+ */
+
+.featured_section {
+    text-align: center;
+    padding-top: 130px;
+    color: white;
+    background-color: #1b1b1b;
+}
+
+.featured_section a {
+    color: #eee;
+    padding: 8px 12px;
+    background-color: rgba(0,0,0,.8);
+    border: 1px solid white;
+    display: inline-block;
+}
+
+.featured_section a:hover {
+    background-color: rgba(0,0,0,.0);
+    transition: 0.8s;
+    -webkit-transition: 0.8s;
+}
