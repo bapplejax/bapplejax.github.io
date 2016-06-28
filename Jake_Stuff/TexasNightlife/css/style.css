@@ -3,73 +3,58 @@
 * --------------------------------------------------
 */
 
-html,
-body {
+html, body {
     overflow-x: hidden;
     /* Prevent scroll on narrow devices */
 }
-
 img {
     width: 100%;
 }
-
 body {
     background-color: black;
 }
-
 footer {
     padding: 30px 0;
 }
-
+.outer_shell {
+    padding-left: 0;
+    padding-right: 0;
+}
 
 /*
  * Custom styles for navbar
  */
 
-.navbar-toggle,
-.navbar-toggle .icon-bar {
+.navbar-toggle, .navbar-toggle .icon-bar {
     border: 1px solid white;
 }
-
 .navbar-brand {
     font-size: 24px;
 }
-
 .navbar-container {
     padding: 20px 0 20px 0;
 }
-
 .navbar.navbar-fixed-top.fixed-theme {
     background-color: #222;
     border-color: #080808;
     box-shadow: 0 0 5px rgba(0, 0, 0, .8);
 }
-
 .navbar-brand.fixed-theme {
     font-size: 18px;
 }
-
 .navbar-container.fixed-theme {
     padding: 0;
 }
-
-.navbar-brand.fixed-theme,
-.navbar-container.fixed-theme,
-.navbar.navbar-fixed-top.fixed-theme,
-.navbar-brand,
-.navbar-container {
+.navbar-brand.fixed-theme, .navbar-container.fixed-theme, .navbar.navbar-fixed-top.fixed-theme, .navbar-brand, .navbar-container {
     transition: 0.8s;
     -webkit-transition: 0.8s;
 }
-
 #header a {
     color: white;
 }
-
 .navbar-right {
     margin-right: 0;
 }
-
 #navbar a {
     position: relative;
     color: #ddd;
@@ -78,16 +63,13 @@ footer {
     margin-left: 30px;
     font-size: 24px;
 }
-
 #navbar a:hover {
     color: #fff;
     background-color: rgba(0, 0, 0, .0);
 }
-
 #navbar a:focus {
     background: rgba(0, 0, 0, .0);
 }
-
 #navbar a:before {
     content: "";
     position: absolute;
@@ -102,19 +84,42 @@ footer {
     -webkit-transition: all 0.3s ease-in-out 0s;
     transition: all 0.3s ease-in-out 0s;
 }
-
 #navbar a:hover:before {
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
 }
-
 .fixed-theme #navbar a {
     font-size: 18px;
     transition: 0.8s;
     -webkit-transition: 0.8s;
 }
+#my_active {
+    border-bottom: 3px solid #d7d6d6;
+}
+#my_active:hover {
+    border: none;
+}
 
+/*
+ * Ad Styles
+ */
+
+.ad_space_bottom {
+    position: fixed;
+    bottom: 0;
+    height: 75px;
+    background-color: white;
+    z-index: 1;
+}
+.ad_space_right {
+    background-color: #0b3342;
+    position: fixed;
+    right: 0;
+    height: 100vh;
+    padding-top: 70px;
+    color: #ddd;
+}
 
 /*
  * Hero styles
@@ -129,7 +134,6 @@ footer {
     visibility: visible;
     -webkit-backface-visibility: hidden;
 }
-
 @-webkit-keyframes fade-in {
     0% {
         opacity: 0;
@@ -138,7 +142,6 @@ footer {
         opacity: 1;
     }
 }
-
 @-moz-keyframes fade-in {
     0% {
         opacity: 0
@@ -147,7 +150,6 @@ footer {
         opacity: 1
     }
 }
-
 @-o-keyframes fade-in {
     0% {
         opacity: 0
@@ -156,7 +158,6 @@ footer {
         opacity: 1
     }
 }
-
 @keyframes fade-in {
     0% {
         opacity: 0
@@ -165,24 +166,20 @@ footer {
         opacity: 1
     }
 }
-
 #banner-load {
     height: 85vh;
     overflow: hidden;
     background-size: cover;
     text-align: center;
 }
-
 #banner-load h2 {
     color: white;
     font-size: 20px;
 }
-
 .TNL_logo {
     width: 300px;
     margin-top: 31vh;
 }
-
 
 /*
  * Three Circle styles
@@ -195,11 +192,9 @@ footer {
     position: absolute;
     top: 75vh;
 }
-
 .three_circles h3 {
     color: white;
 }
-
 .three_circles img {
     width: 144px;
     border-radius: 50%;
@@ -208,20 +203,47 @@ footer {
     transition: 0.8s;
     -webkit-transition: 0.8s;
 }
-
 .three_circles img:hover {
     opacity: 1;
 }
-
-.three_circles > div {
+.three_circles> div {
     display: inline-block;
 }
-
-.three_circles > div:nth-child(2) {
+.three_circles> div:nth-child(2) {
     margin-left: 40px;
     margin-right: 40px;
 }
-
+@media screen and (max-width: 767px) {
+    .three_circles {
+        position: relative;
+        top: inherit;
+    }
+    .three_circles img {
+        width: 100%;
+        border-radius: 0;
+        height: auto;
+    }
+    .three_circles h3 {
+        position: absolute;
+        top: 11%;
+        font-size: 47px;
+        left: 40%;
+    }
+    .three_circles> div {
+        max-height: 100px;
+        overflow: hidden;
+        position: relative;
+    }
+    .three_circles> div:nth-child(2) {
+        margin: 0;
+    }
+    .featured_section {
+        padding-top: 15px;
+        position: relative;
+        float: left;
+        width: 100%;
+    }
+}
 
 /*
  * Featured styles
@@ -230,20 +252,83 @@ footer {
 .featured_section {
     text-align: center;
     padding-top: 130px;
+    padding-bottom: 20px;
     color: white;
     background-color: #1b1b1b;
 }
-
 .featured_section a {
     color: #eee;
     padding: 8px 12px;
-    background-color: rgba(0,0,0,.8);
+    background-color: rgba(0, 0, 0, .8);
     border: 1px solid white;
     display: inline-block;
 }
-
 .featured_section a:hover {
-    background-color: rgba(0,0,0,.0);
+    background-color: rgba(0, 0, 0, .0);
     transition: 0.8s;
     -webkit-transition: 0.8s;
+}
+@media screen and (max-width: 767px) {
+    .featured_section {
+        padding-top: 15px;
+        position: relative;
+        float: left;
+        width: 100%;
+        margin-bottom: 75px;
+    }
+}
+
+/*
+ * Bar logo Styles
+ */
+
+.bar_logos {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+/*
+ * Modal Styles
+ */
+
+.modal-dialog {
+    width: 60%;
+}
+#SanJacSaloonModal .modal-content {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(http://s3-media4.fl.yelpcdn.com/bphoto/P-vTy-FboKYO3ab2wi1zcg/o.jpg) no-repeat center;
+    background-size: cover;
+    color: #e8d287;
+}
+.modal-title {
+    font-size: 30px;
+}
+.modal_pic {
+    height: 150px;
+    width: auto;
+}
+.modal-header {
+    text-align: center;
+}
+.modal-header, .modal-footer {
+    border: none;
+}
+.modal_links {
+    width: 100%;
+    text-align: right;
+    color: white;
+    font-size: 18px;
+}
+
+.my_close {
+  color: white;
+}
+
+.map_link {
+  color: white;
+  font-size: 24px;
+}
+@media screen and (max-width: 767px) {
+    .modal-dialog {
+        width: 100%;
+    }
 }
