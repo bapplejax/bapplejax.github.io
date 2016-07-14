@@ -293,21 +293,25 @@ footer {
 
 .modal-dialog {
     width: 60%;
-}
-#SanJacSaloonModal .modal-content {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(http://s3-media4.fl.yelpcdn.com/bphoto/P-vTy-FboKYO3ab2wi1zcg/o.jpg) no-repeat center;
-    background-size: cover;
-    color: #e8d287;
+    border: 10px solid rgba(255, 255, 255, .4);
+    border-radius: 5px;
 }
 .modal-title {
     font-size: 30px;
+    float: left;
+    margin-top: 10px;
 }
 .modal_pic {
-    height: 150px;
+    height: 100px;
     width: auto;
+    display: inline;
+    float: right;
+}
+.modal_title {
+    float: left;
 }
 .modal-header {
-    text-align: center;
+    text-align: left;
 }
 .modal-header, .modal-footer {
     border: none;
@@ -315,10 +319,12 @@ footer {
 .modal_links {
     width: 100%;
     text-align: right;
-    color: white;
     font-size: 18px;
+    margin-top: 50px;
 }
-
+.modal_links a {
+    color: white;
+}
 .my_close {
   color: white;
 }
@@ -327,8 +333,20 @@ footer {
   color: white;
   font-size: 24px;
 }
+.map_link:hover {
+    color: white;
+}
 @media screen and (max-width: 767px) {
     .modal-dialog {
         width: 100%;
     }
+}
+
+/*
+ * Bar Specific Modal Changes
+ */
+#SanJacSaloonModal .modal-content {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(http://s3-media4.fl.yelpcdn.com/bphoto/P-vTy-FboKYO3ab2wi1zcg/o.jpg) no-repeat center;
+    background-size: cover;
+    color: #e8d287;
 }
