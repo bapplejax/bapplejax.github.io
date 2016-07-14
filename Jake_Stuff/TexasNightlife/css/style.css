@@ -75,6 +75,15 @@ footer {
     margin-right: 0;
 }
 
+#brand img {
+    height: 100%;
+    width: auto;
+}
+
+#brand {
+    padding: 0;
+}
+
 #navbar a {
     position: relative;
     color: #ddd;
@@ -297,13 +306,17 @@ footer {
 .featured_section {
     text-align: center;
     padding-top: 130px;
-    padding-bottom: 20px;
+    padding-bottom: 200px;
     color: white;
     background-color: #1b1b1b;
 }
 
+.featured_section h2, .featured_section p {
+    margin-bottom: 40px;
+}
+
 div.non_index.featured_section {
-    padding-top: 20px;
+    padding-top: 50px;
 }
 
 .featured_section a {
