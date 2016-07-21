@@ -33,31 +33,28 @@
         <h1>Hello, world!</h1>
         <div ng-app="myStarWarsApp">
             <div ng-controller="myStarWarsController">
-                
-<!--                <p>{{ starDatabase.results }}</p>-->
-                <!-- Select Character -->
-                <select>
 
-                    <option ng-repeat="y in starDatabase.results" value="y.name">{{ y.name }}</option>
+                    <!-- Select Character -->
+                    <p>Select a character from the dropdown!</p>
+                
+                    <!-- model is binding the html element to a scope attr. -->
+                    
+                    <select ng-model="data.currentIndex">
+                        
+                        <!-- ng-repeat makes $index available for using -->
+                        
+                        <option ng-repeat="person in data.starDatabase.results" value="{{ $index }}">{{ person.name }}</option>
 
-                </select>
-                
-                <!-- Display Stats -->
-                <ul>
-                    <li></li>
-                </ul>
-                
-<!--
-                    <ul ng-repeat="name in starDatabase.results">
-                        <li ng-repeat="y in name">{{ y }}</li>
-                    </ul>
--->
+                    </select>
 
-                
+
+                    <!-- Display Stats -->
+                    <!-- this comes from option.value (aka $index) which is a string value -->
+                    <div>Name: {{ data.starDatabase.results[toInt(data.currentIndex)].name }}</div>
+
+
             </div>
 
-
-            <!--            var app = angular.module('myStarWarsApp', []); app.controller('myDataDisplay', ['$scope', '$http', function ($scope, $http) { $http.get("http://swapi.co/api/people/").success(function (response) {$scope.results = response; }); app.controller('myStarWarsController', function($scope, $http) { $http.get("http://swapi.co/api/people/2/") .then(function(response) { $scope.myCharacter = response.data; }); });-->
 
         </div>
     </div>
