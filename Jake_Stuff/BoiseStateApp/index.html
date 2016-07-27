@@ -26,31 +26,65 @@
 
     <!-- Star Wars Controller -->
     <script src="js/controller/star_wars.js"></script>
+
 </head>
 
 <body>
     <div class="container">
-        <h1>Hello, world!</h1>
         <div ng-app="myStarWarsApp">
             <div ng-controller="myStarWarsController">
 
-                    <!-- Select Character -->
-                    <p>Select a character from the dropdown!</p>
-                
-                    <!-- model is binding the html element to a scope attr. -->
-                    
+                <!-- Select Character -->
+                <h1>Select a character from the dropdown!</h1>
+
+                <!-- model is binding the html element to a scope attr. -->
+                <div class="col-xs-12 my_select">
+
                     <select ng-model="data.currentIndex">
-                        
+
                         <!-- ng-repeat makes $index available for using -->
-                        
+
                         <option ng-repeat="person in data.starDatabase.results" value="{{ $index }}">{{ person.name }}</option>
 
                     </select>
 
+                </div>
 
-                    <!-- Display Stats -->
-                    <!-- this comes from option.value (aka $index) which is a string value -->
-                    <div>Name: {{ data.starDatabase.results[toInt(data.currentIndex)].name }}</div>
+                <!-- Display Stats -->
+                <!-- this comes from option.value (aka $index) which is a string value -->
+                <div class="info_container">
+                    
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <h3>Name:</h3>
+                        <p>{{ data.starDatabase.results[toInt(data.currentIndex)].name | uppercase }}</p>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <h3>Height:</h3>
+                        <p>{{ data.starDatabase.results[toInt(data.currentIndex)].height * 3.28084 / 100 | number:2 }} feet</p>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-4" ng-style="{'color': data.starDatabase.results[toInt(data.currentIndex)].hair_color}">
+                        <h3>Hair Color:</h3>
+                        <p>{{ data.starDatabase.results[toInt(data.currentIndex)].hair_color | uppercase }}</p>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-4" ng-style="{'color': data.starDatabase.results[toInt(data.currentIndex)].skin_color}">
+                        <h3>Skin Color:</h3>
+                        <p>{{ data.starDatabase.results[toInt(data.currentIndex)].skin_color | uppercase }}</p>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-4" ng-style="{'color': data.starDatabase.results[toInt(data.currentIndex)].eye_color}">
+                        <h3>Eye Color:</h3>
+                        <p>{{ data.starDatabase.results[toInt(data.currentIndex)].eye_color | uppercase }}</p>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <h3>Birth Year:</h3>
+                        <p>{{ data.starDatabase.results[toInt(data.currentIndex)].birth_year | uppercase }}</p>
+                    </div>
+                    
+                </div>
 
 
             </div>

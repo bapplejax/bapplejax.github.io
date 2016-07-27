@@ -1,0 +1,55 @@
+body {
+    background-image: url(../img/swbg.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+h1,
+h3 {
+    color: #ffa700;
+}
+
+p {
+    font-size: 20px;
+}
+
+.info_container {
+    background-color: rgba(255, 255, 255, .4);
+    width: 100%;
+    float: left;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+
+/*
+ * Select Styles
+ */
+
+.my_select {
+    background: url(http://i62.tinypic.com/15xvbd5.png) no-repeat 96% 0;
+    height: 29px;
+    overflow: hidden;
+    width: 240px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #47dfff;
+    color: #333;
+}
+
+.my_select select {
+    background: transparent;
+    border: none;
+    font-size: 14px;
+    height: 29px;
+    padding: 5px;
+    width: 268px;
+}
+
+.my_select select:focus {
+    outline: none;
+}
