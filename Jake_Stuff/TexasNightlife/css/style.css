@@ -148,13 +148,11 @@ footer {
  */
 
 .ad_space_bottom {
-    position: fixed;
-    bottom: 0;
-    height: 75px;
+    height: 200px;
     background-image: url(../img/ads/phone_bottom_ad.jpg);
     background-size: cover;
     background-position: center;
-    z-index: 1;
+    border-top: 2px solid #000;
 }
 
 .ad_space_right {
@@ -321,7 +319,7 @@ footer {
     background-position: center;
     width: 100%;
     float: left;
-    height: 400px;
+    height: 500px;
 }
 
 .featured_section h2, .featured_section p {
@@ -352,14 +350,19 @@ div.non_index.featured_section {
         position: relative;
         float: left;
         width: 100%;
-        margin-bottom: 75px;
         height: 150px;
+    }
+    .ad_space_bottom {
+        height: 80px;
     }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1000px) {
     .featured_section {
         height: 300px;
+    }
+    .ad_space_bottom {
+        height: 100px;
     }
 }
 
