@@ -372,6 +372,7 @@ div.non_index.featured_section {
 .bar_logos {
     padding: 30px;
     background-color: #dddddd;
+    float: left;
 }
 
 
@@ -468,7 +469,7 @@ div.non_index.featured_section {
  */
 
 #SanJacSaloonModal .modal-content {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(http://s3-media4.fl.yelpcdn.com/bphoto/P-vTy-FboKYO3ab2wi1zcg/o.jpg) no-repeat center;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/atx_bars/modal_backgrounds/sanjacbackground.jpg) no-repeat center;
     background-size: cover;
     color: #e8d287;
 }
