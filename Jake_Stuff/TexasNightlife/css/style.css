@@ -148,11 +148,11 @@ footer {
  */
 
 .ad_space_bottom {
-    height: 200px;
+    height: 150px;
     background-image: url(../img/ads/phone_bottom_ad.jpg);
     background-size: cover;
     background-position: center;
-    border-top: 2px solid #000;
+    border-top: 5px solid #000;
 }
 
 .ad_space_right {
@@ -162,6 +162,16 @@ footer {
     position: fixed;
     right: 0;
     height: 100vh;
+}
+
+.phone_ad_only {
+    position: fixed;
+    height: 75px;
+    background-image: url(../img/ads/phone_bottom_ad.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: 2;
+    bottom: 0;
 }
 
 
@@ -291,6 +301,7 @@ footer {
         max-height: 100px;
         overflow: hidden;
         position: relative;
+        width: 100%;
     }
     .three_circles> div:nth-child(2) {
         margin: 0;
@@ -353,7 +364,13 @@ div.non_index.featured_section {
         height: 150px;
     }
     .ad_space_bottom {
-        height: 80px;
+        height: 75px;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 767px) {
+    .featured_section {
+        height: 200px;
     }
 }
 
