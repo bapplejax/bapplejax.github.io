@@ -502,3 +502,43 @@ div.non_index.featured_section {
     background-size: cover;
     color: #e8d287;
 }
+
+
+/*
+ * Photo Page Changes
+ */
+
+.photo_section h2 {
+    color: white;
+    margin-top: 50px;
+}
+
+.photo_section {
+    padding-bottom: 50px;
+    background-image: url(../img/broken_noise.png);
+    background-size: contain;
+    background-repeat: repeat;
+    float: left;
+    width: 100%;
+    min-height: 60vh;
+}
+
+.photo_section .col-sm-4 {
+    margin-bottom: 15px;
+}
+
+.photo_section button {
+    width: 100%;
+}
+
+.photo_section li {
+    list-style-type: none;
+}
+
+.photo_section li a {
+    color: white;
+}
+
+.photo_section li a:hover {
+    color: #eee;
+}
