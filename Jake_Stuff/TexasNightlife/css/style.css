@@ -9,12 +9,12 @@ body {
     /* Prevent scroll on narrow devices */
 }
 
-img {
-    width: 100%;
+body {
+    background-color: #222;
 }
 
-body {
-    background-color: black;
+img {
+    width: 100%;
 }
 
 footer {
@@ -149,10 +149,11 @@ footer {
 
 .ad_space_bottom {
     height: 150px;
-    background-image: url(../img/ads/phone_bottom_ad.jpg);
+/*    background-image: url(../img/ads/phone_bottom_ad.jpg);*/
+    background-image: url(https://placeholdit.imgix.net/~text?txtsize=33&txt=1200%C3%97200&w=1200&h=200);
     background-size: cover;
     background-position: center;
-    border-top: 5px solid #000;
+    margin-top: 25px;
 }
 
 .ad_space_right {
@@ -167,7 +168,8 @@ footer {
 .phone_ad_only {
     position: fixed;
     height: 75px;
-    background-image: url(../img/ads/phone_bottom_ad.jpg);
+/*    background-image: url(../img/ads/phone_bottom_ad.jpg);*/
+    background-image: url(https://placeholdit.imgix.net/~text?txtsize=33&txt=1200%C3%97200&w=1200&h=200);
     background-size: cover;
     background-position: center;
     z-index: 2;
@@ -264,8 +266,8 @@ footer {
     border-radius: 50%;
     height: 144px;
     opacity: .7;
-    transition: 0.8s;
-    -webkit-transition: 0.8s;
+    transition: 0.1s;
+    -webkit-transition: 0.1s;
 }
 
 .three_circles img:hover {
@@ -325,7 +327,8 @@ footer {
 .featured_section {
     text-align: center;
     color: white;
-    background-image: url(../img/ads/featured.jpg);
+/*    background-image: url(../img/ads/featured.jpg);*/
+    background-image: url(https://placeholdit.imgix.net/~text?txtsize=33&txt=1200%C3%97400&w=1200&h=400);
     background-size: cover;
     background-position: center;
     width: 100%;
