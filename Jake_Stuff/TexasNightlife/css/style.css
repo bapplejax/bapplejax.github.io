@@ -19,6 +19,8 @@ img {
 
 footer {
     padding: 30px 0;
+    float: left;
+    width: 100%;
 }
 
 .outer_shell {
@@ -148,7 +150,7 @@ footer {
 * Ad Styles
 */
 
-.ad_space_bottom {
+.space_bottom {
     height: 150px;
     /*    background-image: url(../img/ads/phone_bottom_ad.jpg);*/
     background-image: url(https://placeholdit.imgix.net/~text?txtsize=33&txt=1200%C3%97200&w=1200&h=200);
@@ -157,7 +159,7 @@ footer {
     margin-top: 25px;
 }
 
-.ad_space_right {
+.space_right {
     background-image: url(../img/ads/side_ad.jpg);
     background-size: cover;
     background-position: center;
@@ -166,7 +168,7 @@ footer {
     height: 100vh;
 }
 
-.phone_ad_only {
+.phone_only {
     position: fixed;
     height: 75px;
     /*    background-image: url(../img/ads/phone_bottom_ad.jpg);*/
@@ -263,7 +265,7 @@ footer {
 }
 
 #atx_circle {
-    background-image: url(https://www.cirrus.com/Assets/images/careers/austin_skyline_640.jpg);
+    background-image: url(../img/atx_day_circle.jpg);
     width: 144px;
     border-radius: 50%;
     height: 144px;
@@ -274,11 +276,11 @@ footer {
 }
 
 #atx_circle:hover {
-    background-image: url(https://dongshao737.files.wordpress.com/2013/09/austin-night.jpg);
+    background-image: url(../img/atx_night_circle.jpg);
 }
 
 #dtx_circle {
-    background-image: url(https://www.1800packrat.com/~/media/packrat/images/locations/dallas/dallas-texas-skyline.jpg);
+    background-image: url(../img/dtx_day_circle.jpg);
     width: 144px;
     border-radius: 50%;
     height: 144px;
@@ -289,11 +291,11 @@ footer {
 }
 
 #dtx_circle:hover {
-    background-image: url(http://www.shepjohnson.com/images/places/dallas/dallas_at_night.jpg);
+    background-image: url(../img/dtx_night_circle.jpg);
 }
 
 #htx_circle {
-    background-image: url(http://az616578.vo.msecnd.net/files/2015/02/05/6355876407123552441596558139_6355835019787929981188650418_houston.jpg);
+    background-image: url(../img/htx_day_circle.jpg);
     width: 144px;
     border-radius: 50%;
     height: 144px;
@@ -304,9 +306,8 @@ footer {
 }
 
 #htx_circle:hover {
-    background-image: url(http://cdn.pcwallart.com/images/houston-skyline-at-night-wallpaper-1.jpg);
+    background-image: url(../img/htx_night_circle.jpg);
 }
-
 
 .three_circles> div {
     display: inline-block;
@@ -329,7 +330,9 @@ footer {
 }
 
 @media screen and (max-width: 767px) {
-    #htx_circle, #dtx_circle, #atx_circle {
+    #htx_circle,
+    #dtx_circle,
+    #atx_circle {
         width: 100%;
         height: 150px;
         border-radius: 0;
@@ -384,7 +387,7 @@ div.non_index.featured_section {
         width: 100%;
         height: 150px;
     }
-    .ad_space_bottom {
+    .space_bottom {
         height: 75px;
     }
 }
@@ -399,7 +402,7 @@ div.non_index.featured_section {
     .featured_section {
         height: 300px;
     }
-    .ad_space_bottom {
+    .space_bottom {
         height: 100px;
     }
 }
@@ -534,6 +537,7 @@ div.non_index.featured_section {
 .photo_section h2 {
     color: white;
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .photo_section {
@@ -556,14 +560,52 @@ div.non_index.featured_section {
 
 .photo_section li {
     list-style-type: none;
+    padding: 10px 0 10px 25px;
+    background-color: #222;
+    font-size: 18px;
 }
 
-.photo_section li a {
+.photo_section a {
     color: white;
 }
 
-.photo_section li a:hover {
+.photo_section a:hover {
     color: #eee;
+    text-decoration: none;
+}
+
+.photo_section li:hover {
+    background-color: #dddddd;
+    color: #222222;
+    border: 1px solid #222222;
+}
+
+.photo_section ul {
+    padding: 0 10px;
+}
+
+.my_photo_button {
+    border-radius: 2px;
+    font-size: 30px;
+    background-color: #03b4f6;
+    color: white;
+}
+
+.my_photo_button:hover {
+    -webkit-box-shadow: 0px 0px 78px -4px rgba(255, 255, 255, 1);
+    -moz-box-shadow: 0px 0px 78px -4px rgba(255, 255, 255, 1);
+    box-shadow: 0px 0px 78px -4px rgba(255, 255, 255, 1);
+    color: white;
+    background-color: #222;
+}
+
+.my_photo_button:focus {
+    outline: none;
+    -webkit-box-shadow: 0px 0px 78px -4px rgba(255, 255, 255, 1);
+    -moz-box-shadow: 0px 0px 78px -4px rgba(255, 255, 255, 1);
+    box-shadow: 0px 0px 78px -4px rgba(255, 255, 255, 1);
+    color: white;
+    background-color: #222;
 }
 
 .icon {
