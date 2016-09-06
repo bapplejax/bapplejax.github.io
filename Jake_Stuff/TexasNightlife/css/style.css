@@ -6,6 +6,7 @@
 html,
 body {
     overflow-x: hidden;
+    font-family: "Futura", Arial, Sans-Serif;
     /* Prevent scroll on narrow devices */
 }
 
@@ -614,7 +615,6 @@ div.non_index.featured_section {
 }
 
 #footer p {
-    font-family: "Futura", Arial, Sans-Serif;
     color: #20B5F3;
 }
 
