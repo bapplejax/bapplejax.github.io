@@ -403,6 +403,10 @@ option {
     display: none;
 }
 
+.centered-btns3_nav {
+    display: none;
+}
+
 /*
 
  Contact Styles
@@ -781,5 +785,12 @@ footer a:hover {
     
     .bottom_links a {
         margin: 0px 3px;
+    }
+    
+    .centered-btns2_nav {
+        display: none;
+    }
+    .centered-btns3_nav {
+        display:inherit;
     }
 }
