@@ -173,7 +173,7 @@ footer {
     position: fixed;
     height: 75px;
     /*    background-image: url(../img/ads/phone_bottom_ad.jpg);*/
-    background-image: url(https://placeholdit.imgix.net/~text?txtsize=33&txt=1200%C3%97200&w=1200&h=200);
+    background-image: url(img/phonead.jpg);
     background-size: cover;
     background-position: center;
     z-index: 2;
@@ -349,7 +349,7 @@ footer {
     text-align: center;
     color: white;
     /*    background-image: url(../img/ads/featured.jpg);*/
-    background-image: url(https://placeholdit.imgix.net/~text?txtsize=33&txt=1200%C3%97400&w=1200&h=400);
+    background-image: url(img/featuredad.jpg);
     background-size: cover;
     background-position: center;
     width: 100%;
