@@ -153,13 +153,13 @@ footer {
 
 .space_bottom {
     height: 150px;
-    /*    background-image: url(../img/ads/phone_bottom_ad.jpg);*/
-    background-image: url(https://placeholdit.imgix.net/~text?txtsize=33&txt=1200%C3%97200&w=1200&h=200);
+    background-image: url(../img/phone.jpg);
     background-size: cover;
     background-position: center;
     margin-top: 25px;
 }
 
+/*
 .space_right {
     background-image: url(../img/ads/side_ad.jpg);
     background-size: cover;
@@ -168,12 +168,12 @@ footer {
     right: 0;
     height: 100vh;
 }
+*/
 
 .phone_only {
     position: fixed;
     height: 75px;
-    /*    background-image: url(../img/ads/phone_bottom_ad.jpg);*/
-    background-image: url(img/phonead.jpg);
+    background-image: url(../img/phone.jpg);
     background-size: cover;
     background-position: center;
     z-index: 2;
@@ -348,8 +348,7 @@ footer {
 .featured_section {
     text-align: center;
     color: white;
-    /*    background-image: url(../img/ads/featured.jpg);*/
-    background-image: url(img/featuredad.jpg);
+    background-image: url(../img/featured.jpg);
     background-size: cover;
     background-position: center;
     width: 100%;
