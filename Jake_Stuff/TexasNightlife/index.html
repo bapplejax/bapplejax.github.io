@@ -99,11 +99,39 @@
             </div>
         </div>
         <!-- featured event section -->
-        <a href="https://www.facebook.com/BaseCampATX/" target="_blank" class="featured_section">
-        </a>
+        <script language="JavaScript">
+            images = new Array(2);
+
+
+
+            images[0] = "<a id='featured_section' href = 'https://www.facebook.com/BaseCampATX/' target='_blank' rel='nofollow' ><img src='img/ads/state-wide-feature.jpg' alt='UFC'></a>";
+
+
+            images[1] = "<a id='featured_section' href = 'https://www.facebook.com/BaseCampATX/' target='_blank' rel='nofollow' ><img src='img/ads/state-wide-feature-2.jpg' alt='UFC'></a>";
+
+
+            index = Math.floor(Math.random() * images.length);
+            document.write(images[index]);
+        </script>
+        
         <!-- Ad Space Mobile -->
-        <a href="#" class="col-xs-12 space_bottom">
-        </a>
+        <script language="JavaScript">
+            images = new Array(5);
+
+            images[0] = "<a id='space_bottom' href = 'https://www.facebook.com/BaseCampATX/' target='_blank' rel='nofollow' ><img src='img/ads/phone.jpg' alt='tbd'></a>";
+
+            images[1] = "<a id='space_bottom' href = 'https://www.facebook.com/BaseCampATX/' target='_blank' rel='nofollow' ><img src='img/ads/phone-2.jpg' alt='tbd'></a>";
+            
+            images[2] = "<a id='space_bottom' href = 'https://www.facebook.com/BaseCampATX/' target='_blank' rel='nofollow' ><img src='img/ads/phone-3.jpg' alt='tbd'></a>";
+            
+            images[3] = "<a id='space_bottom' href = 'https://www.facebook.com/BaseCampATX/' target='_blank' rel='nofollow' ><img src='img/ads/phone-4.jpg' alt='tbd'></a>";
+            
+            images[4] = "<a id='space_bottom' href = 'https://www.facebook.com/BaseCampATX/' target='_blank' rel='nofollow' ><img src='img/ads/phone-5.jpg' alt='tbd'></a>";
+            
+
+            index = Math.floor(Math.random() * images.length);
+            document.write(images[index]);
+        </script>
     </div>
     <!-- Footer -->
     <footer>
@@ -142,6 +170,7 @@
     <script src="js/navbar.js"></script>
     <!-- hero js -->
     <script src="js/hero.js"></script>
+
 </body>
 
 </html>
