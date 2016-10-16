@@ -626,3 +626,102 @@ div.non_index#featured_section {
 #footer a:hover {
     text-decoration: none;
 }
+
+/*
+
+NLT Styles 
+
+*/
+
+.nlt {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url(../img/ads/NLT.jpg);
+    background-size: cover;
+    background-position: center;
+    float: left;
+    height: 210px;
+    margin-top: 25px;
+}
+
+@media screen and (max-width: 1000px) {
+    .nlt {
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 725px) {
+    .nlt {
+        height: 100px;
+    }
+}
+
+.nightlife_tours {
+    text-align: center;
+    color: white;
+    padding: 2% 10%;
+    
+}
+
+.nightlife_tours p {
+    font-size: 20px;
+}
+
+.select_package {
+    background-color: white;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.select_package p {
+    text-align: left;
+}
+
+.disclaimer {
+    font-size: 10px;
+    color: #333;
+    margin-top: 20px;
+}
+
+.form-horizontal {
+    float: left;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #333;
+}
+
+
+.form-horizontal label {
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+input {
+    color: black;
+}
+
+select {
+    color: #333;
+}
+
+.submit_button {
+    background-color: #20B5F3;
+    margin-top: 20px;
+}
+
+/*
+
+Thank You
+
+*/
+
+.thank_you {
+    height: 90vh;
+    padding:20% 10%;
+    text-align: center;
+    color:white;
+}
