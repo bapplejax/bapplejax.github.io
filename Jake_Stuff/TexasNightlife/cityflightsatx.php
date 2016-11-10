@@ -37,6 +37,14 @@
                 </button>
                 <a id="brand" class="navbar-brand" href="index.html"><img src="img/logo.png" alt="Texas Nightlife" title="Texas Nightlife"></a>
             </div>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="austin-bars.html">Bars</a></li>
+                    <li><a href="austin-photos.html">Photos</a></li>
+                    <li><a href="austin.html#calendar">Calendar</a></li>
+                    <li><a href="apparel.html">Bar Apparel</a></li>
+                </ul>
+            </div>
             <!-- /.nav-collapse -->
         </div>
         <!-- /.container -->
