@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- TEST CODE TO CHECK GIT -->
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Texas Nightlife - DTX</title>
+    <title>Texas Nightlife - Turn On the Night</title>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom Styles -->
     <link href="css/style.css" rel="stylesheet">
     <script src="https://use.fontawesome.com/0a257e644a.js"></script>
-    
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -28,7 +28,7 @@
     <nav id="header" class="navbar navbar-fixed-top">
         <div id="header-container" class="container navbar-container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <button type="button" id="navbar_toggle" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -38,11 +38,9 @@
             </div>
             <div id="navbar" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="dallas-photos.html">Photos</a></li>
-                    <li><a href="dallas-bars.html">Bars</a></li>
-                    <li><a href="cityflightsdtx.html">City Flights</a></li>
-                    <li><a href="#calendar">Calendar</a></li>
                     <li><a href="apparel.html">Bar Apparel</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="contatct.php">Contact</a></li>
                 </ul>
             </div>
             <!-- /.nav-collapse -->
@@ -58,69 +56,54 @@
         <!-- hero image -->
         <div id="banner-load" class="fade-in">
             <img class="TNL_logo" src="img/TNL_White.png" alt="Texas Nightlife Logo" />
-            <h2>Welcome to Dallas, Texas!</h2>
+            <h2>Contact us by filling out the form below!</h2>
         </div>
-        <!-- featured event section -->
-        <script language="JavaScript">
-            images = new Array(2);
+        <!-- form -->
+        <form action="mailer.php" method="POST" id="group-form" class="form-horizontal">
+            <h2>Please Fill Out This Form</h2>
+            <div class="col-xs-12 col-sm-3 col-sm-offset-3 text-left">
+                <div class="control-group">
+                    <label class="control-label" for="inputFname" name="inputFname">First Name</label>
+                    <div class="controls">
+                        <input type="text" id="inputFname" placeholder="First Name" required>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="inputLname" name="inputLname">Last Name</label>
+                    <div class="controls">
+                        <input type="text" id="inputLname" placeholder="Last Name" required>
+                    </div>
+                </div>
+            </div>
 
+            <div class="col-xs-12 col-sm-3 text-right">
+                <div class="control-group">
+                    <label class="control-label" for="phone" name="phone">Phone Number</label>
+                    <div class="controls">
+                        <input type="text" id="phone" placeholder="Phone Number">
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="email" name="email">Email Address</label>
+                    <div class="controls">
+                        <input type="text" id="email" placeholder="Email Address" required>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-left">
+                <div class="control-group">
+                    <label class="control-label" for="text" name="text">Your Message</label>
+                    <div class="controls">
+                        <textarea class="group-form" rows="4" id="text" name="text" placeholder="Your message..."></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 text-center">
+                <button type="submit" class="btn submit_button">Submit</button>
+            </div>
 
-
-            images[0] = "<a id='featured_section' href = 'https://www.facebook.com/BaseCampATX/' target='_blank' rel='nofollow' ><img src='img/ads/state-wide-feature.jpg' alt='UFC'></a>";
-
-
-            images[1] = "<a id='featured_section' href = 'https://www.facebook.com/BaseCampATX/' target='_blank' rel='nofollow' ><img src='img/ads/state-wide-feature-2.jpg' alt='UFC'></a>";
-
-
-            index = Math.floor(Math.random() * images.length);
-            document.write(images[index]);
-        </script>
-
-        <!-- Ad Space Mobile -->
-        <script language="JavaScript">
-            images = new Array(5);
-
-            images[0] = "<a id='space_bottom' href = 'https://www.facebook.com/BaseCampATX/' target='_blank' rel='nofollow' ><img src='img/ads/phone.jpg' alt='tbd'></a>";
-
-            images[1] = "<a id='space_bottom' href = 'https://www.facebook.com/BaseCampATX/' target='_blank' rel='nofollow' ><img src='img/ads/phone-2.jpg' alt='tbd'></a>";
-
-            images[2] = "<a id='space_bottom' href = 'https://www.facebook.com/BaseCampATX/' target='_blank' rel='nofollow' ><img src='img/ads/phone-3.jpg' alt='tbd'></a>";
-
-            images[3] = "<a id='space_bottom' href = 'https://www.facebook.com/BaseCampATX/' target='_blank' rel='nofollow' ><img src='img/ads/phone-4.jpg' alt='tbd'></a>";
-
-            images[4] = "<a id='space_bottom' href = 'https://www.facebook.com/BaseCampATX/' target='_blank' rel='nofollow' ><img src='img/ads/phone-5.jpg' alt='tbd'></a>";
-
-
-            index = Math.floor(Math.random() * images.length);
-            document.write(images[index]);
-        </script>
-        <!-- Start Calendar -->
-        <div class="container-fluid calendar_section" id="calendar">
-            <div data-tockify-component="calendar" data-tockify-calendar="texasnightlifedtx"></div>
-            <script data-tockify-script="embed" src="https://public.tockify.com/browser/embed.js"></script>
-        </div>
+        </form>
     </div>
-    <!-- Ad Space Mobile -->
-    <script language="JavaScript">
-        images = new Array(5);
-
-        images[0] = "<a id='space_bottom' href = 'https://www.facebook.com/BaseCampATX/' target='_blank' rel='nofollow' ><img src='img/ads/phone.jpg' alt='tbd'></a>";
-
-        images[1] = "<a id='space_bottom' href = 'https://www.facebook.com/BaseCampATX/' target='_blank' rel='nofollow' ><img src='img/ads/phone-2.jpg' alt='tbd'></a>";
-
-        images[2] = "<a id='space_bottom' href = 'https://www.facebook.com/BaseCampATX/' target='_blank' rel='nofollow' ><img src='img/ads/phone-3.jpg' alt='tbd'></a>";
-
-        images[3] = "<a id='space_bottom' href = 'https://www.facebook.com/BaseCampATX/' target='_blank' rel='nofollow' ><img src='img/ads/phone-4.jpg' alt='tbd'></a>";
-
-        images[4] = "<a id='space_bottom' href = 'https://www.facebook.com/BaseCampATX/' target='_blank' rel='nofollow' ><img src='img/ads/phone-5.jpg' alt='tbd'></a>";
-
-
-        index = Math.floor(Math.random() * images.length);
-        document.write(images[index]);
-    </script>
-    
-    <!-- Tour Adspace -->
-    <a href="cityflightsdtx.html" class="nlt"></a>
     <!-- Footer -->
     <footer>
         <div class="container">
@@ -157,7 +140,8 @@
     <!-- navbar js -->
     <script src="js/navbar.js"></script>
     <!-- hero js -->
-    <script src="js/hero-austin.js"></script>
+    <script src="js/hero.js"></script>
+
 </body>
 
 </html>

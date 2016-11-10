@@ -702,6 +702,7 @@ NLT Styles
 
 input {
     color: black;
+    width: 100%;
 }
 
 select {
@@ -711,6 +712,10 @@ select {
 .submit_button {
     background-color: #20B5F3;
     margin-top: 20px;
+}
+
+textarea {
+    width: 100%;
 }
 
 /*

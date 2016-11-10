@@ -9,7 +9,8 @@ if(isset($_POST['submit'])){
     $date = $_POST['date'];
     $group = $_POST['groupNumber'];
     $package = $_POST['package'];
-    $message = "Someone has sent you a message using your contact form: " + "Name: " + $fname + " " + $lname + " " + "Email: " + $from + " " + "Date of Birth: " + $dob + " " + "Number in Group: " + $dob + "Package: " + $package + " " + ".";
+    $text = $_POST['text'];
+    $message = "Someone has sent you a message using your contact form: " + "Name: " + $fname + " " + $lname + " " + "Email: " + $from + " " + "Date of Birth: " + $dob + " " + "Number in Group: " + $dob + "Package: " + $package + " " + $text + ".";
     mail($to, $subject, $message);
     header("Location: thank_you.php");
 
