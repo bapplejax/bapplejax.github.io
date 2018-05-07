@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="09fc87f9-248d-4ea2-989f-b7d04af2831d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Jake_Stuff/kvachkoff_site/css/custom.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jake_Stuff/kvachkoff_site/index.html" afterPath="$PROJECT_DIR$/Jake_Stuff/kvachkoff_site/index.html" />
-    </list>
+    <list default="true" id="09fc87f9-248d-4ea2-989f-b7d04af2831d" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,7 +29,7 @@
         <entry file="file://$PROJECT_DIR$/Jake_Stuff/kvachkoff_site/css/custom.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
-              <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+              <caret line="3" column="1" lean-forward="false" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -251,12 +248,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1522956547268</updated>
-      <workItem from="1522956548432" duration="723000" />
+      <workItem from="1522956548432" duration="1320000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="723000" />
+    <option name="totallyTimeSpent" value="1320000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="2059" y="32" width="1285" height="821" extended-state="0" />
@@ -295,7 +292,7 @@
     <entry file="file://$PROJECT_DIR$/Jake_Stuff/kvachkoff_site/css/custom.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
-          <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+          <caret line="3" column="1" lean-forward="false" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
           <folding />
         </state>
       </provider>
