@@ -1,0 +1,181 @@
+/* Nav and Header */
+.header-block {
+	background: #400003; /* Old browsers */
+	background: -moz-linear-gradient(top, #400003 0%, #9b0002 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #400003 0%,#9b0002 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #400003 0%,#9b0002 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#400003', endColorstr='#9b0002',GradientType=0 ); /* IE6-9 */
+	padding: 60px 0 0;
+	border-bottom: 2px solid black;
+}
+
+.header-block a {
+	color: white;
+}
+
+.header-block a.dropdown-item {
+	color: black;
+}
+
+.header-block--navigation {
+	padding-bottom: 0;
+}
+
+.navbar-nav {
+	padding: 10px 20px;
+	background-color: #BB0711;
+	border-radius: 15px 15px 0 0;
+}
+
+.navbar-collapse {
+	justify-content: flex-end;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+	color: rgba(255, 255, 255, .80);
+}
+
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+	color: white;
+}
+
+.navbar-dark .navbar-toggler {
+	border-color: rgba(255, 255, 255, .85);
+}
+
+.dropdown-menu {
+	background-color: #BB0711;
+	border: 1px solid #6f0408;
+	left: 7px;
+	font-size: 13px;
+}
+
+.header-block a.dropdown-item {
+	color: white;
+	padding: 5px 10px;
+}
+
+.header-block a.dropdown-item:hover {
+	background-color: #6f0408;
+}
+
+/* Banner Section */
+.banner {
+	border-top: 4px solid #BB0711;
+	border-bottom: 4px solid #BB0711;
+	padding: 15px 0;
+	background: url(../img/wool.png) repeat;
+}
+
+.banner-image {
+	background: url(../img/test_image.jpg);
+	background-size: cover;
+  height: 300px;
+}
+
+/* Body Section */
+.text-body {
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+/* Contact Section */
+.contact-area {
+	background: #eee;
+	padding: 15px;
+	border-radius: 5px;
+}
+
+#sendMessageButton {
+	background-color: #BB0711;
+	border-color: #BB0711;
+	-webkit-transition: all .1s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+#sendMessageButton:hover {
+	background-color: #400003;
+}
+
+/* Footer Section */
+.copyright {
+	font-size: 12px;
+}
+
+.social-buttons a,
+.quicklinks a {
+	color: #BB0711;
+	-webkit-transition: all .1s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.social-buttons a:hover,
+.quicklinks a:hover {
+	color: #400003;
+}
+
+/* Changing container sizes */
+@media (min-width: 1200px) {
+  .container{
+    max-width: 970px;
+  }
+}
+
+/* Styles for non-mobile */
+@media (min-width: 768px) {
+	.nav-link {
+		margin: 0 8px;
+    background-color: #BB0711;
+    padding: 5px 20px;
+    font-size: 14px;
+    border: 1px solid #490004;
+    background-image: linear-gradient(bottom, rgb(85, 2, 5) 0%, rgb(177, 6, 15) 100%);
+    background-image: -o-linear-gradient(bottom, rgb(85, 2, 5) 0%, rgb(177, 6, 15) 100%);
+    background-image: -moz-linear-gradient(bottom, rgb(85, 2, 5) 0%, rgb(177, 6, 15) 100%);
+    background-image: -webkit-linear-gradient(bottom, rgb(85, 2, 5) 0%, rgb(177, 6, 15) 100%);
+    background-image: -ms-linear-gradient(bottom, rgb(85, 2, 5) 0%, rgb(177, 6, 15) 100%);
+    background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, rgb(85, 2, 5)), color-stop(1, rgb(177, 6, 15)) );
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    text-shadow: 0px -1px 0px rgba(0,0,0,.5);
+    -webkit-box-shadow: 0px 3px 0px #83050a, 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
+    -moz-box-shadow: 0px 3px 0px #83050a, 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
+    box-shadow: 0px 3px 0px #83050a, 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
+    -webkit-transition: all .1s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+	}
+
+	.nav-link:hover,
+	.active .nav-link {
+    background-image: linear-gradient(bottom, rgb(105, 3, 7) 0%, rgb(246, 28, 39) 100%);
+    background-image: -o-linear-gradient(bottom, rgb(105, 3, 7) 0%, rgb(246, 28, 39) 100%);
+    background-image: -moz-linear-gradient(bottom, rgb(105, 3, 7) 0%, rgb(246, 28, 39) 100%);
+    background-image: -webkit-linear-gradient(bottom, rgb(105, 3, 7) 0%, rgb(246, 28, 39) 100%);
+    background-image: -ms-linear-gradient(bottom, rgb(105, 3, 7) 0%, rgb(246, 28, 39) 100%);
+    background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, rgb(105, 3, 7)), color-stop(1, rgb(246, 28, 39)) )
+	}
+
+	.contact-area .form-control {
+		font-size: 13px;
+	}
+}
+
+/* Styles for mobile */
+@media (max-width: 767px) {
+	.navbar-nav {
+		padding: 0;
+    background: none;
+	}
+
+	.header-block {
+		padding: 0;
+	}
+
+	.header-block--navigation {
+		padding: 20px 15px;
+	}
+}
